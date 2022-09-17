@@ -61,7 +61,9 @@ exports[`<Main /> should render the background and text colors correctly 1`] = `
     <h2
       class="c3"
     >
+       
       TypeScript, React, NextJS, Jest, Testing Library, Storybook and Styled Components
+       
     </h2>
     <img
       alt="Developer coding"
