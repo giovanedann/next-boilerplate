@@ -1,0 +1,21 @@
+{
+  "name": "NextJS + TypeScript - Boilerplate",
+  "short_name": "Boilerplate",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background-color": "#06082B",
+  "description": "Boilerplate of a project configured with React, NextJS, Jest, Testing Library, Storybook and Styled Components!",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#06082B"
+}
