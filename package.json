@@ -11,7 +11,8 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "build-storybook": "build-storybook -s ./public",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "lint-staged": {
     "src/**/*": [
@@ -59,6 +60,7 @@
     "jest-environment-jsdom": "^29.0.3",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^13.0.3",
+    "plop": "^3.1.1",
     "prettier": "2.7.1",
     "typescript": "4.8.3"
   }
