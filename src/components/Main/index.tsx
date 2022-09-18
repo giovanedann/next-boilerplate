@@ -6,12 +6,33 @@ interface IMain {
   description?: string
 }
 
+const variants = {
+  animate: {
+    rotate: [0, 90, 180, 270, 360],
+    transition: {
+      repeat: Infinity,
+      duration: 5,
+      ease: 'linear'
+    }
+  },
+  hover: {
+    y: 200,
+    scale: 3
+  }
+}
+
 const Main: FC<IMain> = ({
   title = 'Boilerplate React + NextJS',
-  description = 'TypeScript, React, NextJS, Jest, Testing Library, Storybook and Styled Components'
+  description = 'TypeScript, React, NextJS, Jest, Testing Library, Storybook, Framer Motion and Styled Components'
 }) => (
   <S.Wrapper>
-    <S.Logo src="img/logo.svg" alt="Athom image with a Boilerplate text" />
+    <S.Logo
+      variants={variants}
+      animate="animate"
+      whileHover="hover"
+      src="img/icon-512.png"
+      alt="white react athom with pink background"
+    />
     <S.Title>{title}</S.Title>
     <S.Description> {description} </S.Description>
     <S.Illustration src="img/hero-illustration.svg" alt="Developer coding" />

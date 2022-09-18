@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const Wrapper = styled.main`
   background-color: #06092b;
@@ -11,10 +12,11 @@ export const Wrapper = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 `
 
-export const Logo = styled.img`
-  width: 25rem;
+export const Logo = styled(motion.img)`
+  width: 15rem;
   margin-bottom: 2rem;
 `
 
