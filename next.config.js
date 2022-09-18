@@ -4,10 +4,8 @@ const isInProd = process.env.NODE_ENV === 'production'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = withPWA({
-  pwa: {
-    dest: 'public',
-    disable: !isInProd
-  },
+  dest: 'public',
+  disable: !isInProd,
   reactStrictMode: true,
   swcMinify: true
 })
