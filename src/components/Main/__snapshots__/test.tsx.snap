@@ -23,10 +23,11 @@ exports[`<Main /> should render the background and text colors correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .c1 {
-  width: 25rem;
+  width: 15rem;
   margin-bottom: 2rem;
 }
 
@@ -49,9 +50,9 @@ exports[`<Main /> should render the background and text colors correctly 1`] = `
     class="c0"
   >
     <img
-      alt="Athom image with a Boilerplate text"
+      alt="white react athom with pink background"
       class="c1"
-      src="img/logo.svg"
+      src="img/icon-512.png"
     />
     <h1
       class="c2"
@@ -62,7 +63,7 @@ exports[`<Main /> should render the background and text colors correctly 1`] = `
       class="c3"
     >
        
-      TypeScript, React, NextJS, Jest, Testing Library, Storybook and Styled Components
+      TypeScript, React, NextJS, Jest, Testing Library, Storybook, Framer Motion and Styled Components
        
     </h2>
     <img

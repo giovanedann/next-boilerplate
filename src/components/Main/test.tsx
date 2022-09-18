@@ -6,7 +6,7 @@ describe('<Main />', () => {
     render(<Main />)
 
     expect(
-      screen.getByAltText(/athom image with a boilerplate text/i)
+      screen.getByAltText(/white react athom with pink background/i)
     ).toBeInTheDocument()
   })
 
@@ -26,7 +26,7 @@ describe('<Main />', () => {
 
     expect(
       screen.getByText(
-        /typescript, react, nextjs, jest, testing library, storybook and styled components/i
+        /typescript, react, nextjs, jest, testing library, storybook, framer motion and styled components/i
       )
     ).toBeInTheDocument()
   })
