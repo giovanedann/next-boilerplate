@@ -1,13 +1,18 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPWA = require('next-pwa')
 const isInProd = process.env.NODE_ENV === 'production'
+const plugins = []
 
-/** @type {import('next').NextConfig} */
-const nextConfig = withPWA({
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const withPWA = require('next-pwa')({
   dest: 'public',
-  disable: !isInProd,
-  reactStrictMode: true,
-  swcMinify: true
+  disable: !isInProd
 })
 
-module.exports = nextConfig
+plugins.push(withPWA)
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true
+}
+
+module.exports = plugins.reduce((acc, current) => current(acc), nextConfig)
