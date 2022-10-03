@@ -36,5 +36,5 @@ Clone this repository in your project and change the github origin\
 ```git clone git@github.com:giovanedann/next-react-boilerplate.git```
 
 Or start a next project with this template directly from the command line\
-```npx create-next-app -e https://github.com/giovanedann/next-react-boilerplate```\
-```yarn create-next-app -e https://github.com/giovanedann/next-react-boilerplate```
+```npx create-next-app -e https://github.com/giovanedann/next-boilerplate```\
+```yarn create-next-app -e https://github.com/giovanedann/next-boilerplate```
