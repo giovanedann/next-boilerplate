@@ -33,7 +33,7 @@ You just need to implement your stuff! :)
 
 ### Creating a next app with this template
 Clone this repository in your project and change the github origin\
-```git clone git@github.com:giovanedann/next-react-boilerplate.git```
+```git clone git@github.com:giovanedann/next-boilerplate.git```
 
 Or start a next project with this template directly from the command line\
 ```npx create-next-app -e https://github.com/giovanedann/next-boilerplate```\
