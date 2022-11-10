@@ -10,9 +10,10 @@
     "prepare": "husky install",
     "test": "jest",
     "test:watch": "yarn test --watch",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js"
+    "test:coverage": "yarn test --collect-coverage",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "src/**/*": [
@@ -37,8 +38,7 @@
     "@storybook/addon-links": "^6.5.13",
     "@storybook/builder-webpack5": "^6.5.13",
     "@storybook/manager-webpack5": "^6.5.13",
-    "@storybook/preset-create-react-app": "^4.1.2",
-    "@storybook/react": "6.5.13",
+    "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -64,6 +64,11 @@
     "lint-staged": "^13.0.3",
     "plop": "^3.1.1",
     "prettier": "2.7.1",
-    "typescript": "4.8.4"
+    "storybook-addon-next": "^1.6.10",
+    "typescript": "4.8.4",
+    "webpack": "^5.75.0"
+  },
+  "peerDependencies": {
+    "webpack": "*"
   }
 }
