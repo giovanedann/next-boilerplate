@@ -38,3 +38,10 @@ Clone this repository in your project and change the github origin\
 Or start a next project with this template directly from the command line\
 ```npx create-next-app -e https://github.com/giovanedann/next-boilerplate```\
 ```yarn create-next-app -e https://github.com/giovanedann/next-boilerplate```
+
+### Running your stories
+To run your stories, type this in your terminal\
+```yarn storybook```\
+```npm run storybook```
+
+Then wait, and access http://localhost:6006 to see your stories!
